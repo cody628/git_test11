@@ -80,7 +80,7 @@ def prompt_template():
     ])
 
 def initialize_conversation():
-    llm = ChatOpenAI(temperature=0, openai_api_key=st.secrets['OPENAI_API_KEY'])
+    llm = ChatOpenAI(temperature=0, openai_api_key=st.secrets['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'])
     st.session_state.conversation = ConversationChain(
         llm=llm,
         memory=ConversationBufferMemory(return_messages=True),
